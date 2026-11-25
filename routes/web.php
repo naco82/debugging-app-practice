@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Http\Middleware\LogRequest;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,5 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/users', [UserController::class, 'index'])->name('users.index');
-Route::get('/users/create', [UserController::class, 'create'])->name('users.create');
-Route::post('/users', [UserController::class, 'store'])->name('users.store');
+Route::get('/users/create', [UserController::class, 'create'])->name('users.create')->middleware(LogRequest::class);
+Route::post('/users', [UserController::class, 'store'])->name('users.store')->middleware(LogRequest::class);

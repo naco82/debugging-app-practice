@@ -1,3 +1,31 @@
+# debugging-app-practice
+
+## 概要
+
+COACHTECH 教材 Tutorial 10-4「デバッグ ハンズオン演習」で作成した成果物です。
+バグが含まれたユーザー登録機能をデバッグし、正しく動作するように修正します。
+このハンズオンでは、デバッグに集中できるよう、バグが含まれた状態のスターターキットを使用します。
+
+## 使用技術
+
+- PHP 8.x
+- Laravel 10.x
+- デバッグツール（`dd()`, `dump()`, `Log` ファサード）
+
+## 学んだこと
+
+・エラーメッセージから問題箇所を特定する読み解き方
+
+・dd() と Log::info() を使い分けたデバッグの進め方
+
+・Mass Assignment エラーと $fillable の役割
+
+・今回は、ヒントをもとにコードはわかるが、それをどこに追記するのかなど手順が分かりにくく、都度AIにサポートしてもらいながら実装しました。特にテキストを見てもわからないことが多いチュートリアルでした。
+
+## 動作確認
+
+動作確認: http://localhost/users/create にアクセスしてフォームを送信
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
